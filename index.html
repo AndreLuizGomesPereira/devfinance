@@ -44,7 +44,7 @@
         </section>
         <section id="transaction">
             <h2 class="sr-only">Transações</h2>
-            <a href="#" class="button new">+ Nova transação</a>
+            <a href="#" onclick="Modal.open()" class="button new">+ Nova transação</a>
             <table id="data-table">
                 <thead>
                     <tr>
@@ -79,7 +79,7 @@
 
     </main>
 
-    <div class="modal-overlay active">
+    <div class="modal-overlay">
         <div class="modal">
             <div id="form">
                 <h2>Nova transação</h2>
@@ -89,8 +89,18 @@
                         <input type="text" id="description" name="description" value="" placeholder="Descrição">
                     </div>
                     <div class="input-group">
-                        <label class="sr-only" for="amount">Descrição</label>
-                        <input type="number" id="amount" name="amount" value="" placeholder="Descrição">
+                        <label class="sr-only" for="amount">Valor</label>
+                        <input type="number" id="amount" name="amount" step="0.01" value="" placeholder="0,00">
+                        <small class="help">Use o sinal "-" (negativo) para despesas e "," (vírgula) para casa
+                            decimais</small>
+                    </div>
+                    <div class="input-group">
+                        <label class="sr-only" for="date">Data</label>
+                        <input type="date" id="date" name="date" value="" placeholder="Data">
+                    </div>
+                    <div class="input-group actions">
+                        <a href="#" onclick="Modal.close()" class="button cancel">Cancelar</a>
+                        <button>Salvar</button>
                     </div>
                 </form>
             </div>
@@ -98,6 +108,21 @@
     </div>
 
     <footer>dev.finance$</footer>
+    <script>
+        const Modal = {
+            open() {
+                // Abrir Modal
+                //Adicionar a class active do modal
+                document.querySelector('.modal-overlay').classList.add('active')
+            },
+            close() {
+                //Fechar o modal
+                //Remover a classe active do modal
+                document.querySelector('.modal-overlay').classList.remove('active')
+
+            }
+        }
+    </script>
 </body>
 
 </html>

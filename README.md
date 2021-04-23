@@ -6,5 +6,7 @@
 - Responsividade
 - Formulário para cadastro de dados
 - Modal
-- Uma pitadinha de JavaScript
+- Uma pitadinha de 
+
+Video pausado em 1:43 horas
 
