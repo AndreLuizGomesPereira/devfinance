@@ -6,7 +6,15 @@
 - Responsividade
 - Formulário para cadastro de dados
 - Modal
-- Uma pitadinha de 
 
-Video pausado em 1:43 horas
+## Aula 03
+
+- Objetos
+- Tipos e estrutura de dados
+- if e Else
+- Erros
+- Funcionalidades
+- Adicionar e remover transações
+- Calcular
+- Salvar no localStorage
 
