@@ -19,3 +19,4 @@
 - Salvar no localStorage
 
 
+1:33:19 Pausado Video
