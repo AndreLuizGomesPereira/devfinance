@@ -17,6 +17,3 @@
 - Adicionar e remover transações
 - Calcular
 - Salvar no localStorage
-
-
-1:33:19 Pausado Video
